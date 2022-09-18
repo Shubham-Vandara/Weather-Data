@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color : #edede9">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-md-8 my-5 mx-auto p-4 rounded" style="box-shadow: 0 0 10px #888888 ;background-color : #e5e5e5">
+                <h1 class="text-center">Weather Data </h1>
+                <p class="lead">Check your weather by enter your city name.</p>
+                <input type="text" id="city" class="form-control col-md-w-50" placeholder="Enter Your City Name...">
+                    <button type="button" id="btnWeather" class="btn btn-primary mt-3 ">Get Current Weather</button>
+
+                <div class="my-3" id="design">
+                    <h3><span id="city_name"></span> </h3>
+                    <h3><span id="country_name"></span> </h3>
+                        <span id="main">  </span> <span id="icon"></span>
+                        <p id="temp"></p>
+                        <p id="des"></p>
+                        <p id="lon"></p>
+                        <p id="lat"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
