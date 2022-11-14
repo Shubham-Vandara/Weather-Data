@@ -1,7 +1,8 @@
+// click event on button
 $('#btnWeather').on('click',function(){
     getWeather()
 })
-
+// ajax function
 function getWeather(){
     var cityGet = $('#city').val()
     if(cityGet.trim() == 0){
